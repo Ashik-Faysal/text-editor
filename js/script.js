@@ -46,10 +46,9 @@ document.getElementById("btn-text").addEventListener("click", function(){
    
 });
 //------------------------------------
-document.getElementById("btn-color").addEventListener("change",function(){
+document.getElementById("btn-color").addEventListener("change",function(event){
     const textField = document.getElementById("text-field");
-    const colorValue = e.target.value;
-    textField.style.color = colorValue;
+    textField.style.color = event.target.value;
 })
     
 document.getElementById("clear-text").addEventListener("click", function(){
