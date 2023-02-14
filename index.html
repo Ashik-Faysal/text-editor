@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text editor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/ed398e5d1c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <main class="bg-green-500 w-4/5 mx-auto mt-24">
+      <h1 class="text-6xl font-bold text-center pt-8 mb-12">MY Text Editor</h1>
+      <section class="border-2 w-4/5 mx-auto border-black p-3">
+        <div class="my-6 mx-3 grid grid-cols-3">
+          <div class="">
+            <button id="text-bold">
+              <i class="fa-sharp fa-solid fa-bold"></i>
+            </button>
+            <button id="text-italic" class="mx-6">
+              <i class="fa-solid fa-italic"></i>
+            </button>
+            <button id="text-underLine">
+              <i class="fa-solid fa-underline"></i>
+            </button>
+          </div>
+          <div>
+            <button id="left-align">
+              <i class="fa-solid fa-align-left"></i>
+            </button>
+            <button id="center-align" class="mx-6">
+              <i class="fa-solid fa-align-center"></i>
+            </button>
+            <button id="right-align">
+              <i class="fa-solid fa-align-right"></i>
+            </button>
+            <button id="justify-align" class="mx-6">
+              <i class="fa-solid fa-align-justify"></i>
+            </button>
+          </div>
+          <div>
+            <button id="btn-number"><input class="w-8" type="number" min="1" max="100" value="16" /></button>
+            <button id="btn-text" class="mx-6">aA</button>
+            <button id="btn-color"><input type="color" name="" id="" /></button>
+          </div>
+        </div>
+        <div class="my-6 h-1 bg-black"></div>
+
+        <textarea
+          id="text-field"
+          class="w-full h-96 mb-12 p-2"
+          rows="18"
+          id=""
+        ></textarea>
+        <div class="flex justify-end">
+          <button id="clear-text" class="text-2xl px-4 py-1 bg-rose-500 rounded-lg font-bold">Clear Text</button>
+        </div>
+      </section>
+    </main>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
